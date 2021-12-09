@@ -1,5 +1,6 @@
 <app-header></app-header>
 <main>
+    <app-catalog></app-catalog>
     <app-client-form [form]="form" (valueChangeEventEmitter)="changeValue($event)" (submitEvent)="submit($event)">
     </app-client-form>
     <app-recap *ngIf="isSubmitted" [data]="form"></app-recap>

@@ -14,3 +14,8 @@ type FormInputChangeEventValues = {
   accessor?: string;
   isValid: boolean;
 };
+
+type Product = {
+  label: string;
+  price: number;
+};

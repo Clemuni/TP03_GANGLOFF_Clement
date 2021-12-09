@@ -12,6 +12,7 @@ import { InputComponent } from './components/input/input.component';
 
 import { PhonePipe } from './pipes/phone.pipe';
 import { MonService } from './services/mon-service.service';
+import { CatalogComponent } from './components/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MonService } from './services/mon-service.service';
     RecapComponent,
     InputComponent,
     PhonePipe,
+    CatalogComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [MonService],

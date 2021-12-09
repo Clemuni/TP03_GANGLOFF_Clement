@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import '../../ts/types';
-import { MonService } from '../../services/mon-service.service';
 
 @Component({
   selector: 'app-recap',
@@ -10,9 +9,7 @@ import { MonService } from '../../services/mon-service.service';
 export class RecapComponent implements OnInit {
   @Input() data: Form | null = null;
 
-  constructor(private monService: MonService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.monService.getCatalogue();
-  }
+  ngOnInit(): void {}
 }
