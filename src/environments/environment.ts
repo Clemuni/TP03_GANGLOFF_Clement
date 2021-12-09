@@ -5,7 +5,6 @@
 export const environment = {
   production: false,
   baseUrl: 'assets/mock/catalog.json',
-  name: 'default',
 };
 
 /*
