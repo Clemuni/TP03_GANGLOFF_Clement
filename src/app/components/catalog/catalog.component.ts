@@ -28,7 +28,7 @@ export class CatalogComponent implements OnInit {
       .subscribe(
         (catalog: Product[]) =>
           (this.catalog = catalog.filter((product) =>
-            product.label.includes(parameters.value)
+            product.label.toLowerCase().includes(parameters.value.toLowerCase())
           ))
       );
   }

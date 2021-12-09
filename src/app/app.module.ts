@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -25,7 +26,7 @@ import { CatalogComponent } from './components/catalog/catalog.component';
     PhonePipe,
     CatalogComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [MonService],
   bootstrap: [AppComponent],
 })
